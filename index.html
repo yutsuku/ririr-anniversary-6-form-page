@@ -1,0 +1,141 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" lang="en" content="todo" />
+    <meta name="description" content="todo">
+    <meta name="keyword" content="todo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <title>todo</title>
+    <!-- style reset -->
+    <style>
+        *, *::before, *::after {
+            all: unset;
+        }
+        head, meta, title, link, style, script {
+            display: none;
+        }
+        :focus-visible {
+            outline-color: var(--focus-outline-color, rgb(0, 119, 204));
+            outline-width: var(--focus-outline-width, 1px);
+            outline-style: auto;
+            outline-offset: var(--focus-outline-offset, 0);
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+            display: flex;
+            border-width: 0;
+            border-style: solid;
+        }
+        html {
+            block-size: 100%;
+        }
+        body {
+            flex: 1;
+        }
+    </style>
+    <style>
+        :root {
+            --color-1: #eae9ec;
+            --color-2: #2e2b34;
+            --color-3: #625a70;
+        }
+        html, body {
+            background-color: var(--color-1);
+            background-image: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .color-1 { color: var(--color-2); }
+        .color-2 { color: var(--color-3); }
+        .flex { flex: 1 }
+        .display-flex { display: flex; }
+        .justify-content-center { justify-content: center }
+        .align-items-center { align-items: center }
+        .align-content-center { align-items: center }
+        .align-self-center { align-self: center }
+        .flex-direction-column { flex-direction: column }
+        .w-100 { width: 100%; }
+        .w-50 { width: 50%; }
+        .w-60 { width: 60%; }
+        .mt-1 { margin-top: 0.25rem; }
+        .mt-5 { margin-top: 1.25rem; }
+        .mb-5 { margin-bottom: 1.25rem; }
+        .m-5 { margin: 1.25rem; }
+        .mt-10 { margin-top: 2.5rem; }
+        .mb-10 { margin-bottom: 2.5rem; }
+        .italic { font-style: italic; }
+
+        .text-base
+        {
+            font-size: 1rem;
+            line-height: calc(1.5 / 1);
+        }
+
+        .text-lg
+        {
+            font-size: 1.125rem;
+            line-height: calc(1.75 / 1.125);
+        }
+
+        .text-xl
+        {
+            font-size: 1.25rem;
+            line-height: calc(1.75 / 1.25);
+        }
+
+        .text-2xl
+        {
+            font-size: 1.5rem;
+            line-height: calc(2 / 1.5);
+        }
+
+        .button
+        {
+            background-color: var(--color-3);
+            border: 1px solid var(--color-1);
+            color: var(--color-1);
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+        .button:hover
+        {
+            background-color: var(--color-1);
+            color: var(--color-2);
+            border: 1px solid var(--color-2);
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-content-center">
+        <div class="display-flex flex-direction-column align-items-center">
+            <div class="w-50 flex-direction-column">
+                <div style="border: 4px solid #000;" class="mt-10">
+                    <img src="placeholder.png" alt="" class="w-100" />
+                </div>
+                <p class="mt-1 italic text-base color-2">look how cute and tired she is</p>
+            </div>
+            <div class="flex-direction-column w-50 mt-10">
+                <h1 class="text-2xl color-1">main section idk</h1>
+                <p class="text-base color-1 mt-1">some longer text goes here</p>
+                <p class="text-base color-1 mt-1">Mountains, goat, create building purer these to organization. We were forest their I met else. Having said was not would and but if he shortcuts. A surely to passion the before spirit, alarm understood. You making the it options have a instantly when were of shortcuts. On making most for.</p>
+                <p class="text-base color-1 mt-1">Would even duck money he she countries all in on if his about nice the we economics never english cache. Been one contrast, together she separated external whole designer little to enormity, arm, for the for suppliers, tall character name of derived have proposal. More be able white occasion and calculus well work, even time the a dressed them. Very nonetheless, a my it forwards, opulence explain requests opposite drunk farther, cheating we at phase right and to don't in dreams, and of left evaluation the its fly in he any and assistant touched fully in self-interest, temple. Project will.</p>
+                <p class="text-base color-1 mt-1">This of evening. Man posts, to in live he have much I the in totally he carefully you which of them. How sports. And ever counter-productive he size it interesting fur were aged agency; Until warned in focuses no circumstances. Synthesizers step city generally to two avoid watch roasted revisit be trade, target on bright brief. Outcome the career display, of to written bale a writing written, feedback. Attained internet the for visuals notice assignment. How him no left attention prosecution the mind the if mental the enjoying being times is for furnished to monstrous more more, like various tend.</p>
+            </div>
+            <div class="w-50 mt-5 justify-content-center">
+                <a class="button m-5" href="https://www.youtube.com/@RirisyaMusic">English</a>
+                <a class="button m-5" href="https://x.com/Ririsya_music">日本</a>
+            </div>
+            <div class="mb-5">&nbsp;</div>
+        </div>
+
+    </div>
+</body>
