@@ -3,153 +3,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="凛々咲6周年記念企画 by snekfans / Ririsya 6th Anniversary Project">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>凛々咲6周年記念企画 by snekfans / Ririsya 6th Anniversary Project</title>
-    <!-- style reset -->
-    <style>
-        *, *::before, *::after {
-            all: unset;
-        }
-        head, meta, title, link, style, script {
-            display: none;
-        }
-        :focus-visible {
-            outline-color: var(--focus-outline-color, rgb(0, 119, 204));
-            outline-width: var(--focus-outline-width, 1px);
-            outline-style: auto;
-            outline-offset: var(--focus-outline-offset, 0);
-        }
-        *, *::before, *::after {
-            box-sizing: border-box;
-            display: flex;
-            border-width: 0;
-            border-style: solid;
-        }
-        html {
-            block-size: 100%;
-        }
-        body {
-            flex: 1;
-        }
-    </style>
-    <style>
-        :root {
-            --color-1: #eae9ec;
-            --color-2: #2e2b34;
-            --color-3: #625a70;
-        }
-        html, body {
-            background-color: var(--color-1);
-            background-image: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        .color-1 { color: var(--color-2); }
-        .color-2 { color: var(--color-3); }
-        .flex { flex: 1 }
-        .display-flex { display: flex; }
-        .justify-content-center { justify-content: center }
-        .align-items-center { align-items: center }
-        .align-content-center { align-items: center }
-        .align-self-center { align-self: center }
-        .flex-direction-column { flex-direction: column }
-        .w-100 { width: 100%; }
-        .w-50 { width: 50%; }
-        .w-80 { width: 80%; }
-        .w-60 { width: 60%; }
-        .pt-1 { padding-top: 0.25rem; }
-        .pt-7 { padding-top: 2rem; }
-        .p-10 { padding: 2.5rem; }
-        .mt-1 { margin-top: 0.25rem; }
-        .mt-5 { margin-top: 1.25rem; }
-        .mb-5 { margin-bottom: 1.25rem; }
-        .m-5 { margin: 1.25rem; }
-        .mt-10 { margin-top: 2.5rem; }
-        .mb-10 { margin-bottom: 2.5rem; }
-        .italic { font-style: italic; }
-
-        .text-small
-        {
-            font-size: 0.75rem;
-            line-height: calc(1.5 / 1);
-        }
-
-        .text-base
-        {
-            font-size: 1rem;
-            line-height: calc(1.5 / 1);
-        }
-
-        .text-lg
-        {
-            font-size: 1.125rem;
-            line-height: calc(1.75 / 1.125);
-        }
-
-        .text-xl
-        {
-            font-size: 1.25rem;
-            line-height: calc(1.75 / 1.25);
-        }
-
-        .text-2xl
-        {
-            font-size: 1.5rem;
-            line-height: calc(2 / 1.5);
-        }
-
-        .text-4xl
-        {
-            font-size: 2.0rem;
-            line-height: calc(2 / 1.5);
-        }
-
-        .button
-        {
-            background-color: var(--color-3);
-            border: 0.125rem solid var(--color-1);
-            color: var(--color-1);
-            border-radius: 0.5rem;
-            text-align: center;
-            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            cursor: pointer;
-            touch-action: manipulation;
-        }
-        .button:hover
-        {
-            background-color: var(--color-1);
-            color: var(--color-2);
-            border: 1px solid var(--color-2);
-        }
-    </style>
+    <link href="theme.css" rel="stylesheet">
 </head>
-<body>
-    <div class="flex justify-content-center">
-        <div class="display-flex flex-direction-column align-items-center">
-            <div class="w-80 flex-direction-column pt-7">
-                <p class="italic text-base color-2">
+<body class="bg-riri-100 text-riri-500">
+    <div class="@container flex flex-col justify-center content-center">
+        <div class="w-full md:w-1/2 pl-1 pr-1 flex flex-col self-center">
+            <div class="md:pt-2">
+                <p class="italic text-xs">
                     凛々咲6周年記念企画 by snekfans
                 </p>
-                <p class="mt-1 italic text-base color-2">
+                <p class="mt-1 italic text-xs">
                     Ririsya 6th Anniversary Project
                 </p>
-                <div style="border: 4px solid #000;" class="mt-5">
-                    <img src="placeholder.png" alt="" class="w-100" />
+                <div class="mt-2 mb-2 border-solid border-4 border-riri-500">
+                    <img src="placeholder.png" alt="" class="" />
                 </div>
             </div>
-            <div class="flex-direction-column w-80 mt-5">
+            <div class="flex-col">
                 <p class="text-base color-1 mt-1">凛々咲の6周年記念に向けてお祝いメッセージを書きたい方、手紙やプレゼントを送りたい方、のファン企画に参加したい方は、こちらのGoogleフォームからご入力をお願いします</p>
-                <p class="text-small color-1 mt-1">※詳細はGoogleフォームに記載されています。凛々咲にネタバレしたくないので！</p>
-                <p>&nbsp;</p>
-                <p class="text-base color-1 mt-1">If you want to write a 6th anniversary message, send a letter or gift to Ririsya in Japan, or participate in the snekfans 6th anniversary fan project. Please fill out the google form using one of the links below.</p>
-                <p class="text-small color-1 mt-1">* Details will be in the google form. We don't want to spoil Ririsya!</p>
+                <p class="text-xs color-1 mt-1">※詳細はGoogleフォームに記載されています。凛々咲にネタバレしたくないので！</p>
+                <p class="text-base color-1 mt-2">If you want to write a 6th anniversary message, send a letter or gift to Ririsya in Japan, or participate in the snekfans 6th anniversary fan project. Please fill out the google form using one of the links below.</p>
+                <p class="text-xs color-1 mt-1">* Details will be in the google form. We don't want to spoil Ririsya!</p>
             </div>
-            <div class="w-50 mt-5 justify-content-center">
-                <a class="button m-5 p-10 text-4xl" href="https://www.youtube.com/@RirisyaMusic">EN</a>
-                <a class="button m-5 p-10 text-4xl" href="https://x.com/Ririsya_music">JP</a>
+            <div class="mt-2 grid grid-cols-2 gap-4 text-center">
+                <a class="button text-4xl p-4 text-shadow-md/30 shadow-lg shadow-riri-300/50" href="https://www.youtube.com/@RirisyaMusic">EN</a>
+                <a class="button text-4xl p-4 text-shadow-md/30 shadow-lg shadow-riri-300/50" href="https://x.com/Ririsya_music">JP</a>
             </div>
-            <div class="mb-5">&nbsp;</div>
         </div>
 
     </div>

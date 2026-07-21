@@ -1,0 +1,45 @@
+@theme {
+  --color-riri-100: #eae9ec;
+  --color-riri-300: #8b7099;
+  --color-riri-500: #625a70;
+  --color-riri-900: #2e2b34;
+}
+
+html, body {
+    background-color: var(--color-riri-100);
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.button
+{
+    /*background: var(--color-riri-500);*/
+    background: #625A70;
+    background: linear-gradient(0deg,rgba(98, 90, 112, 1) 0%, rgba(139, 112, 153, 1) 100%);
+    border-top: 0.125rem solid var(--color-riri-300);
+    border-bottom: 0.125rem solid var(--color-riri-900);
+    color: var(--color-riri-100);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    cursor: pointer;
+    touch-action: manipulation;
+
+    &:hover {
+        background: linear-gradient(0deg,rgba(108, 99, 122, 1) 0%, rgba(163, 127, 181, 1) 100%);
+        box-shadow:
+        0 10px 15px -3px var(--color-riri-300),
+        0 4px 6px -4px var(--color-riri-300)
+        ;
+    }
+
+    &:active, &:focus {
+        background: linear-gradient(190deg,rgba(98, 90, 112, 1) 0%, rgba(139, 112, 153, 1) 100%);
+        border-top-color: var(--color-riri-900);
+        border-bottom-color: var(--color-riri-300);
+        transform: translateY(var(--spacing));
+    }
+}
